@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:
+        'Inter',
+        system-ui,
+        -apple-system,
+        sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #b0b0f5;
+}
+.container {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f3f4f7;
+    padding: 30px 50px;
+    border-radius: 10px;
+    gap: 1.5rem;
+    transition: box-shadow 0.3s;
+    &:hover {
+        box-shadow: 2px 5px 10px #9696f8;
+    }
+}
+h1 {
+       color: #414142;
+    font-size: 1.9rem;
+    padding: 10px 0;
+    border-bottom: 1px solid #dad8d8e0;
+}
+#counterDisplay {
+    font-weight: 600;
+    color: #6c6c6dfa;
+    font-size: 2rem;
+}
+button {
+    border-radius: 8px;
+    padding: 8px 30px;
+    font-size: 1.2rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.button-container button {
+    font-size: 1.4rem;
+    background: #6161f3;
+    transition: background 0.3s;
+    &:hover {
+        background: #1616ce;
+    }
+}
+#resetBtn {
+    background: #d92626;
+    transition: background 0.3s;
+    &:hover {
+        background: #f15856;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px 40px;
+    }
+    h1 {
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+}
